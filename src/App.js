@@ -53,12 +53,15 @@ const App = () => {
     setOffset(0)
   }, [searchParams])
 
-  const getInput = useCallback((e) => {
-    e.preventDefault()
-    let params = { q: e.target.value }
-    setSearchParams(params)
-    // inputRef.current(e.target.value)
-  }, [setSearchParams])
+  const getInput = useCallback(
+    (e) => {
+      e.preventDefault()
+      let params = { q: e.target.value }
+      setSearchParams(params)
+      // inputRef.current(e.target.value)
+    },
+    [setSearchParams]
+  )
 
   const debouncedGetInput = useMemo(() => _.debounce(getInput, 500), [getInput])
 
