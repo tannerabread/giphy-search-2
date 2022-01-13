@@ -1,0 +1,44 @@
+.grid {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 20px;
+}
+
+.card {
+  margin: 1rem;
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 30%;
+  max-height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  background-color: rgba(22,10,38,1);
+  box-shadow: rgba(24, 24, 27, 0.57) 7px 8px 17px -2px;
+
+  button {
+    margin-top: 10px;
+    background-color: rgba(47,35,89,1);
+    color: white;
+    border: none;
+    padding: 0.3rem;
+
+    &:hover {
+      background-color: rgba(242,182,182,1);
+      color: black;
+      cursor: pointer;
+    }
+  }
+}
+
+.gif {
+  height: 80%;
+}
+
+.copy-button {
+  margin-top: 10px;
+}

@@ -1,0 +1,13 @@
+.button-container {
+  padding: 1rem 0;
+
+  button {
+    margin: 0 10px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--header1);
+    color: white;
+    padding: 0.5rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+}
